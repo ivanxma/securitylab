@@ -23,9 +23,9 @@ By default --initialize will create the MySQL Server Data with randomly generate
 # Encrypting Audit Data
 ## Configure keyring
 * Change the my1.cnf to append the following 3 lines 
-  early-plugin-load=keyring_encrypted_file.so
-  keyring_encrypted_file_data=/home/mysql/data/lab02/mysql-keyring/keyring-encrypted
-  keyring_encrypted_file_password=password
+  - early-plugin-load=keyring_encrypted_file.so
+  - keyring_encrypted_file_data=/home/mysql/data/lab02/mysql-keyring/keyring-encrypted
+  - keyring_encrypted_file_password=password
 
 ## Configure Encryption for Audit Log
 * Login to mysql session (127.0.0.1:3306) with user root/mysql
