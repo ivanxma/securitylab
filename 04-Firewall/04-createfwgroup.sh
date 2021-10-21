@@ -11,6 +11,9 @@ drop user if exists member3@'localhost';
 create user member1@'localhost' identified by 'member1';
 create user member2@'localhost' identified by 'member2';
 create user member3@'localhost' identified by 'member3';
+grant all on employees.* to member1@'localhost';
+grant all on employees.* to member2@'localhost';
+grant all on employees.* to member3@'localhost';
 
 EOL
 
