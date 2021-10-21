@@ -1,5 +1,5 @@
 . ./comm.sh
-mysql --login-path=testroot  << EOL1
+mysql -uroot -h127.0.0.1 -P3306 -pmysql << EOL1
 SELECT audit_log_filter_set_user('audituser1@%', 'all_enabled') AS 'Result';
 EOL1
 

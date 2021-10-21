@@ -1,10 +1,6 @@
 . ./comm.sh
-mysql --login-path=testroot  << EOL1
-SELECT audit_log_filter_set_user('audituser1@%', 'log_table_mysql_db') AS 'Result';
-EOL1
 
-
-mysql -uaudituser1 -h127.0.0.1 << EOL
+mysql -uaudituser1 -h127.0.0.1 --table << EOL
 
 
 drop database if exists auditdb1;
@@ -21,3 +17,4 @@ use mysql;
 select * from mysql.user;
 
 EOL
+
