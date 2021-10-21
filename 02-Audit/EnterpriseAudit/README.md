@@ -62,6 +62,6 @@ By default --initialize will create the MySQL Server Data with randomly generate
 * Execute again system command to list the file content
   - system ls -l /home/mysql/data/lab02/aud*
 
-* Identify an audit log file in the format audit.<datetime>.log.<key_id>.enc. Execute the following command to view the decrypted audit log file by substituting <password> with the password of the corresponding key ID and <full_path_of_the_audit_file> with the full path of the audit log file:
+* Identify an audit log file in the format audit.<<datetime>>.log.<key_id>.enc. Execute the following command to view the decrypted audit log file by substituting <password> with the password of the corresponding key ID and <full_path_of_the_audit_file> with the full path of the audit log file:
   - system sudo openssl enc -d -aes-256-cbc -pass pass:'<password>' -md sha256 -in <full_path_of_the_audit_file>
   - Note: The file with the format audit.log.<key_id>.enc is the current audit log file, it cannot be decrypted because it has not been closed. You need to rotate the audit log if you want to decrypt and view the latest audited records.
