@@ -1,4 +1,4 @@
-# [ 01-setup ](https://github.com/ivanxma/securitylab/tree/master/01-setup)  - Setup and Administration
+# [ Setup DB and Configure ](https://github.com/ivanxma/securitylab/tree/master/01-setup)  - Setup and Administration
 The 01-setup lab is to introduce how to initialize MySQL and the basic configuration 
 
 # [ Enterprise Audit ](https://github.com/ivanxma/securitylab/tree/master/02-Audit/01-EnterpriseAudit) - Enterprise Audit with ecnrypt/decrypt audit files
