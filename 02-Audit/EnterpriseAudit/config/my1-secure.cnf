@@ -1,0 +1,9 @@
+[mysqld]
+basedir=/usr/local/mysql
+datadir=/home/mysql/data/lab02
+port=3306
+server_id=1
+socket=/home/mysql/data/lab02/secure.sock
+log-error=/home/mysql/data/lab02/mysqld.error
+
+secure_file_priv=NULL
