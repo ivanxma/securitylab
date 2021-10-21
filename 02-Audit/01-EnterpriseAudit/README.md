@@ -68,9 +68,9 @@ By default --initialize will create the MySQL Server Data with randomly generate
 
 ## Disable Audit log encryption
 
-#  change the audit_log_encryption to NONE
+* change the audit_log_encryption to NONE
   - SET PERSIST_ONLY audit_log_encryption='NONE'
   - RESART
 
-# List the audit log file and check the current audit log file (audit.log.*)
+* List the audit log file and check the current audit log file (audit.log.*)
   - system ls -l /home/mysql/data/lab02/aud*
