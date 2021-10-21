@@ -18,6 +18,6 @@ report-port=3306
 log-bin=mybin.log
 
 # Connection Control
-plugin-load-add=connection_control.so
-connection-control=FORCE_PLUS_PERMANENT
-connection-control-failed-login-attempts=FORCE_PLUS_PERMANENT
+#plugin-load-add=connection_control.so
+#connection-control=FORCE_PLUS_PERMANENT
+#connection-control-failed-login-attempts=FORCE_PLUS_PERMANENT

@@ -7,3 +7,8 @@ socket=/home/mysql/data/lab02/secure.sock
 log-error=/home/mysql/data/lab02/mysqld.error
 
 secure_file_priv=NULL
+#audit-log=FORCE_PLUS_PERMANENT
+
+#early-plugin-load=keyring_encrypted_file.so
+#keyring_encrypted_file_data=/home/mysql/data/lab02/mysql-keyring/keyring-encrypted
+#keyring_encrypted_file_password=password

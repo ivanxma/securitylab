@@ -7,7 +7,7 @@ then
 	exit 1
 fi
 
-mysqld --defaults-file=config/my1-secure.cnf &
+mysqld_safe --defaults-file=config/my1-secure.cnf &
 
 sleep 2
 
