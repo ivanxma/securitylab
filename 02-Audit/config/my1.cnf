@@ -1,0 +1,23 @@
+[mysqld]
+basedir=/usr/local/mysql
+datadir=/home/mysql/data/lab02
+port=3306
+server_id=1
+socket=/home/mysql/data/lab02/secure.sock
+log-error=/home/mysql/data/lab02/mysqld.error
+
+# gtid enable with the following 3 options
+log-slave-updates=true
+gtid-mode=on
+enforce-gtid-consistency=true
+# gtid enable---END
+
+
+sync-master-info=1
+report-port=3306
+log-bin=mybin.log
+
+# Connection Control
+plugin-load-add=connection_control.so
+connection-control=FORCE_PLUS_PERMANENT
+connection-control-failed-login-attempts=FORCE_PLUS_PERMANENT
